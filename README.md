@@ -1,6 +1,13 @@
 # Employee Task Tracker - MERN Stack
 
-A full-stack Employee Task Management System built with the MERN stack (MongoDB, Express, React, Node.js).
+A full-stack Employee Task Management System built using the MERN stack (MongoDB, Express, React, Node.js).  
+The platform allows managing employees, assigning tasks, and viewing real-time dashboard analytics.
+
+## 🚀 Live Demo
+
+🔹 **Frontend (Render):** `https://employee-task-system-frontend.onrender.com`
+🔹 **Backend (Render):** `https://employee-task-system-backend.onrender.com`
+🔹 **API Base URL:** `https://employee-task-system-backend.onrender.com`
 
 ## Tech Stack
 
@@ -34,6 +41,7 @@ A full-stack Employee Task Management System built with the MERN stack (MongoDB,
    ```env
    PORT=5000
    MONGO_URI=mongodb://localhost:27017/employee-task-tracker
+   CLIENT_URL=http://localhost:5173
    ```
 4. Start the server:
    ```bash
@@ -49,7 +57,11 @@ A full-stack Employee Task Management System built with the MERN stack (MongoDB,
    ```bash
    npm install
    ```
-3. Start the development server:
+3. Create a `.env` file in `client/` with:
+   ```env
+   VITE_API_URL=http://localhost:5000
+   ```
+4. Start the development server:
    ```bash
    npm run dev
    ```
