@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import { FaPlus, FaTrash, FaEdit } from 'react-icons/fa';
-
+import {API} from '../api';
 const Employees = () => {
   const { employees, getEmployees, addEmployee, deleteEmployee, updateEmployee } = useContext(GlobalContext);
   const [showModal, setShowModal] = useState(false);
